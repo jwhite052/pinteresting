@@ -35,6 +35,10 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  #required for heroku
+  # required for heroku
   config.action_mailer.default_url_options = { :host => 'http://mrwhite-pinteresting.herokuapp.com/' }
+
+  # required for Paperclip and ImageMagick
+  Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-6.9.1-Q16/convert"
+
 end
