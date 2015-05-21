@@ -39,6 +39,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'http://mrwhite-pinteresting.herokuapp.com/' }
 
   # required for Paperclip and ImageMagick
-  Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-6.9.1-Q16/convert"
+  Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.9.1-Q16'
+  # Paperclip.options[:command_path] = "/usr/local/bin/"
 
 end

@@ -22,5 +22,10 @@ module Pinteresting
 
     #Required for Heroku
     config.assets.initialize_on_precompile = false
+
+    #application.rb
+    #Paperclip.options[:command_path] = "/usr/local/bin/"
+    #Paperclip.options[:command_path] = "/c/Program Files/ImageMagick-6.9.1-Q16/convert"
+    Paperclip.options[:command_path] = 'C:\Program Files\ImageMagick-6.9.1-Q16'
   end
 end
